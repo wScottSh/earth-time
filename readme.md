@@ -27,13 +27,7 @@ Northern Solstice | ns | ms:182 | The moment when the sun is at the most norther
 Mid-Northern Solstice | mns | mns:228 | The halfway point between the northern solstice and southward equinox (represented in days)
 Southward Equinox | se | se:274 | When the sun is traveling southward and crosses the equator (represented in days) The first day of Autumn in the northern hemisphere.
 Mid-Southward Equinox | mse | mse:319 | The halfway point between the southward equinox and southern solstice (represented in days)
-Relative Time Mark | \| | ^\|@52\|
-|@20|@
-:|:30|
-|:19|mss
-@|!1:15@32|
-:159|:5|
--52 beats after sunrise
+Relative Time Mark | \| | `^\|@52\|`<br>`\|@20\|@`<br>`:\|:30\|`<br>`\|:19\|mss`<br>`@\|!1:15@32\|`<br>`:159\|:5\|` | -52 beats after sunrise
 -20 beats before current time
 -30 days after current day
 -19 days before mid-southern solstice
