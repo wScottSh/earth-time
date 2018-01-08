@@ -1,0 +1,26 @@
+{
+  "name": "earth-time",
+  "version": "1.0.0",
+  "description": "Earth Time is a new standard of time built to notate and recognize time as absolute worldwide events first, and local events as relative events second. Time is reckoned currently primarily local, with the UTC timecode only there as a convenient way to keep local times synchronized around the world. The bias towards a local time first makes it difficult to imagine the reality of the world around us.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "npm": "^5.6.0",
+    "unix-timestamp": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wScottSh/earth-time.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wScottSh/earth-time/issues"
+  },
+  "homepage": "https://github.com/wScottSh/earth-time#readme"
+}

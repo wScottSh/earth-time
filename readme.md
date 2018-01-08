@@ -69,7 +69,7 @@ The concept of what denotes the most apparent part of the calendar, the day, is 
 
 If the four global solar events (the quarterly position of the earth in its orbit around the sun) are the measurement of the year, then using the rotation of the earth in relation to the sun as the measurement of the day makes most sense. However, the way we currently measure time is not based on the exact rotation of the earth, but rather a convenient simplification based on acceptance of the UTC and its mostly nonsensical political breakdown of timezones. While more useful than any other time accounting system in recorded history, it leaves much to be desired.
 
-##### Night & Day
+#### Night & Day
 
 Looking to nature again, we find two events that we as humans understand as actually separating one day from the other. The beginning of night and the beginning of day, or sunrise and sunset. These two events, while not _global_ solar events, are still solar events on a local scale. This makes a distinction between two kinds of solar events. Global solar events (GSE), which the whole world experiences at once, and is used to calculate the cycle of the year. And the "local solar events" (LSE), which only a portion of the world experiences at a time relative to the earth’s current rotation in relation to the sun.
 
@@ -90,7 +90,7 @@ Sunrise | `^` | The absolute LSE of when the sun is 18 degrees above the eastern
 Midday | `#` | The arbitrary LE occurring halfway between the current day’s sunrise and upcoming sunset. | In relation to the opposing midnight, this occurs `@500`<br><br>There can be very small fluctuations in this number, but they are often very minor and occur simply because of the sine wave nature of the yearly cycle. The largest fluctuations occur around the mid-solar events, as those are the times with the greatest change in relative daylight. The effects are more pronounced the closer the physical location to the poles
 Sunset | `-` | The absolute LSE of when the sun remains 18 degrees above the western horizon. | The absolute `@time` fluctuates based on time of year
 
-##### Relative Local Solar Events
+#### Relative Local Solar Events
 
 In accordance with the goals of Earth Time, which is to first create an absolute global time, and then make it understood and relatable to the natural rhythms of the earth second, but in a balanced way, this clean demarcation of time only works for one physical location on the planet. All other local times are relative based off of that location.
 
