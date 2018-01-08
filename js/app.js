@@ -17,7 +17,7 @@ console.log("main.js sanity check");
 //   "astronomical_twilight_end": "2018-01-07T18:49:41+00:00"
 // }'
 
-testObj = {
+staticObj = {
   sunrise: "2018-01-07T07:30:29+00:00",
   sunset: "2018-01-07T17:17:50+00:00",
   solar_noon: "2018-01-07T12:24:10+00:00",
@@ -30,12 +30,21 @@ testObj = {
   astronomical_twilight_end: "2018-01-07T18:49:41+00:00"
 }
 
-console.log(testObj);
+const EarthTime = () => { // all stamps in epoch time
+  today_start: #, // today_sunrise - yesterday_sunclipse
+  today_sunsight: #, // directly
+  today_sunclipse: #,
+  today_end: #, // tomorrow_sunsight - today_sunclipse
+  today_beat_length: #,
+  triegon: 'aaa' // converted from lat/lon to aaa resolution
+}
+
+console.log(staticObj);
 
 let now = epoch.now()
 
 console.log(now);
-console.log(epoch.fromDate(testObj.sunrise));
+console.log(epoch.fromDate(staticObj.sunrise));
 
 let epochObj = {}
 
@@ -49,6 +58,6 @@ const gregToEpoch = (dictionary) => {
   });
 }
 
-gregToEpoch(testObj)
+gregToEpoch(staticObj)
 
 console.log(JSON.stringify(epochObj));
