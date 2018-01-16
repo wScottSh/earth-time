@@ -8,6 +8,8 @@ My hope is that this balanced holistic view of time notation will simultaneously
 
 ## Example Clockface & Notation Cheatsheet
 
+![Earth Time Clockface](images/EarthTime-Clockface.jpg)
+
 <details>
 <summary>Dropdown for 'Earth Time Notation Cheatsheet'</summary>
 
@@ -36,9 +38,6 @@ Absolute Time | | `!2015:287@008` | Year: 2015<br>Day: 287<br>Beat: 008
 Time Duration | `%` | `@53%`<br>`:16%`<br>`!12%`<br>`!27:157%` | 53 beats long<br>16 days long<br>12 years long<br>My current age
 
 </details>
-<br>
-
-![Earth Time Clockface](images/EarthTime-Clockface.jpg)
 
 ### Time Read From Solar Events
 
