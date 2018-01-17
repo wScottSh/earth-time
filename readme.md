@@ -49,4 +49,41 @@ Time Duration | `%` | `@53%`<br>`:16%`<br>`!12%`<br>`!27:157%` | 53 beats long<b
 
 ## General Assembly Unit 2 Project Proposal
 
-A central Kanban board tracking development is located [here on Trello](https://trello.com/b/sU6SPRV5). For the most up to date developments, take a quick look inside.
+The Minimum Viable Product version of the Earth Time web app is a much simplified version of what the final app will be. What follows is the specs for the MVP. A central Kanban board tracking development is located [here on Trello](https://trello.com/b/sU6SPRV5). For the most up to date developments, take a quick look inside.
+
+### Attack Plan
+
+The Unit 2 project requirements are to build a fully functioning [CRUD application](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) with a persistent database, and to deploy it on the internet. To meet the project requirements, both the assignments deliverables as well as the requirements to get the clock to work properly, I'll be using several pre-existing technologies. They are listed as follows:
+
+- I'll be using HerokuApp to deploy
+- Unix epoch time stamp converter
+- Sunrise/sunset API database
+- Bootstrap framework for responsive design
+- OAuth to allow users to create a personal login
+- Google Maps API to save latitude and longitude data to user's accounts
+
+The database structure is simple with very few connections:
+![ERD Diagram](docs/erd-diagram.png)
+
+The routes needed are to be able to create and access user profiles, and to update the user's location. That route architecture will look something like:
+
+URL | HTTP Verb | Action | Description
+--- | --- | --- | ---
+users/new | POST | Create | Create new user account
+users/:id | GET | Show | Access user account
+location/:id/update | PATCH | Update | Update user location
+location/:id | GET | Show | Access user location
+
+### User Stories
+
+1. As a user I want to be able to quickly see what time it is in beats so I don't have to do parse through a bunch of complicated jargon
+1. As a user, I want to be able to convert UTC time into beats easily so I feel like using beats will fit into my life as it is right now
+1. As a user, I want to be able to see what time it is in beats on my phone so I can use it as it's relevant
+1. As a user, I want to know how the beats relates to my current local time so that I have a reference of what the beats means
+1. As a user, I want to be able to save my current location to a user account so I don't have to keep adding it every time I want to use this new type of time
+1. As a user, I want to be able to add my location to the clock without needing to know my lat/long so that the app is immediately useful
+1. As a user, I want to most important information about earth time the most readily apparent so I don't get lost in the details of so much info at once
+1. As a user, I want the interface to be appealing so I don't feel like this is a hacked together prototype
+1. As a user, I want to be able to log in conveniently with a level of trust that my data won't be misused
+1. As a user, I want the interface to look good both on mobile and desktop so that I can use it effectively on all devices
+1. As a user, I would like a handy built in reference to what all the symbols mean to help make the transition easier
